@@ -5,7 +5,7 @@ def call() {
 
     bat """
     @echo off
-    set CLASSPATH="${jarPath};${libPath}\\scripts"
-    groovy -cp %CLASSPATH% "%scriptPath%"
+    echo === Running Mongo Connector ===
+    groovy -cp "${jarPath};${libPath}\\scripts" "${scriptPath}"
     """
 }
