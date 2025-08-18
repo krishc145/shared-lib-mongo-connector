@@ -10,8 +10,8 @@ def call(String action = 'setup') {
         def client = MongoClients.create("mongodb://localhost:27017")
 
         // Create database and collection
-        def db = client.getDatabase("krishna-DB-admin")
-        def coll = db.getCollection("dba-admin-fruits")
+        def db = client.getDatabase("krishna_DB_admin")
+        def coll = db.getCollection("dba_admin_fruits")
 
         // Insert sample data
         coll.insertOne(new Document("name", "mango"))
